@@ -4,7 +4,6 @@ class Unicorn {
     this.occupation = occupation;
     this.health = "One Kajillion"
   }
-
   
   displayAction(text, className) {
     var div = document.createElement("div");
@@ -51,7 +50,6 @@ function setListeners(unicorn) {
   const healButton = addListener('heal', () => unicorn.heal())
   const breakdanceButton = addListener('breakdance', () => unicorn.breakdance())
   const eatButton = addListener('eat', () => unicorn.eatCronut())
-  console.log("Listener")
 }
 
 function getElement(id) {
