@@ -2,9 +2,9 @@
 
 ![Unicorn Alley](https://i.imgur.com/1P7ljmp.jpg "Unicorn Alley")
 
-Thousands of years ago, unicorns roamed the forests on all continents.  In modern times, however, they've been driven from their verdant woodlands, taking refuge in an unfamiliar territory: New York City.  Forced to adapt, they've gained new skills and abilities.  This is their story..
+Thousands of years ago, unicorns roamed the forests on all continents.  In modern times, however, they've been driven from their verdant woodlands, taking refuge in an unfamiliar territory: Seattle.  Forced to adapt, they've gained new skills and abilities.  This is their story..
 
-Your task is to help these unicorns by adapting their old, functional Javascript ways to a new, shiny, object-oriented methodology.
+Your task is to help these unicorns by adapting their old, function-based Javascript ways to a new, shiny, object-oriented methodology.
 
 Unicorns have the following functions:
 
