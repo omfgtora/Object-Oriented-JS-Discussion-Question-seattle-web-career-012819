@@ -8,7 +8,8 @@ class Unicorn {
   
   displayAction(text, className) {
     var div = document.createElement("div");
-    const eventArea = document.getElementById('event_area')
+    const eventArea = getElement('event_area')
+    const imageArea = getElement('image_area')
     div.appendChild(document.createTextNode(text));
     eventArea.prepend(div);
     imageArea.className = className;
@@ -23,35 +24,34 @@ class Unicorn {
   }
   
   attack() {
-    this.useMove("'ATTAAAAAAAAAK!''", 'attack')
+    this.displayAction("'ATTAAAAAAAAAK!''", 'attack')
   }
 
   defend() {
-    this.usemove("You put sunglasses on.", 'defend')
+    this.displayAction("You put sunglasses on.", 'defend')
   }
 
   heal() {
-    this.useMove("You feel refreshed after yoga.", 'heal')
+    this.displayAction("You feel refreshed after yoga.", 'heal')
   }
 
   breakdance() {
-    this.useMove("It's really spinning class", 'breakdance')
+    this.displayAction("It's really spinning class", 'breakdance')
   }
 
   eatCronut() {
-    this.useMove("You've gained one billion health points.", 'eat')
+    this.displayAction("You've gained one billion health points.", 'eat')
   }
 }
 
 function setListeners(unicorn) {
-  const eventArea = getElement('event_area')
-  const imageArea = getElement('image_area')
   const restartButton = addListener('restart', () => unicorn.restart())
   const attackButton = addListener('attack', () => unicorn.attack())
   const defendButton = addListener('defend', () => unicorn.defend())
   const healButton = addListener('heal', () => unicorn.heal())
   const breakdanceButton = addListener('breakdance', () => unicorn.breakdance())
   const eatButton = addListener('eat', () => unicorn.eatCronut())
+  console.log("Listener")
 }
 
 function getElement(id) {
